@@ -53,3 +53,15 @@ Product.create!(title: 'Ruby Performance Optimization',
       </p>},
   inmage_url: 'adrpo.jpg',
   price: 46.00)
+
+Product.create!(title: 'Ruby Perform',
+  description:
+    %{<p>
+      <em>W and how to fix it. Alex Dymo will guide you
+      through perils of memory and CPU optimization, profiling, measuring,
+      performance testing, garbage collection, and tuning. You’ll find that
+      all those “hard” things aren’t so difficult after all, and your code
+      will run orders of magnitude faster.
+      </p>},
+  inmage_url: 'adrpo.jpg',
+  price: 46.00)
