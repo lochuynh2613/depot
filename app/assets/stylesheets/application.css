@@ -81,37 +81,6 @@
  		margin-right: 1px;
  	}
 	
-	.depot_form fieldset{
-		background: : #efe;
-	}
-	.depot_form fieldset legend{
-		color: #dfd;
-		background: #141;
-		font-family: sans-serif;;
-		padding: 0.2em 1em;
-	}
-	.depot_form fieldset div{
-		margin-bottom: 0.3em;
-	}
-
-	.depit_form form label{
-		width: 0.5em;
-		float: left;
-		text-align: right;
-		padding-top: 0.2em;
-		margin-right: 0.1em;
-		display: block;
-	}
-
-	.depit_form form select textarea input{
-		margin-left: 0.5em;
-	}
-	.depit_form form .submit{
-		margin-left: 4em;
-	}
-	.depit_form form br{
-		display: none;
-	}
 
  	@media all and (max-width: 800px) { 
  		#columns { 

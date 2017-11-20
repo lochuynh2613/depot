@@ -10,18 +10,18 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
-    get new_order_url
-    assert_response :success
-  end
+#  test "should get new" do
+#    get new_order_url
+#    assert_response :success
+#  end
 
-  test "should create order" do
-    assert_difference('Order.count') do
-      post orders_url, params: { order: {  pay_type: @order. pay_type, address: @order.address, email: @order.email, name: @order.name } }
-    end
+#  test "should create order" do
+#    assert_difference('Order.count') do
+#      post orders_url, params: { order: {  pay_type: @order.pay_type, address: @order.address, email: @order.email, name: @order.name } }
+#    end
 
-    assert_redirected_to order_url(Order.last)
-  end
+#    assert_redirected_to order_url(Order.last)
+#  end
 
   test "should show order" do
     get order_url(@order)
@@ -55,7 +55,16 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
     post line_items_url, params: {product_id: products(:ruby).id}
 
-    get new_order_url
+   get new_order_url
     assert_response :success
+  end
+
+  test "should create order" do
+    assert_difference('Order.count') do
+    post orders_url, params: { order: { address: @order.address,
+    email: @order.email, name: @order.name,
+    pay_type: @order.pay_type } }
+    end
+    assert_redirected_to store_index_url
   end
 end
